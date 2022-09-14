@@ -4,10 +4,14 @@
 
 
 1. 리덕스 설치
+```
 $ yarn  add redux react-redux
+```
 
 2. redux-logger 설치
-yarn add redux-logger
+```
+$ yarn add redux-logger
+```
 
 3. 크롬 웹스토어에서 redux-devtool  설치
 https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=ko
@@ -18,13 +22,14 @@ redux-devtools 사용법 및 설정
 https://github.com/zalmoxisus/redux-devtools-extension
 
 설치
+```
 $  yarn add redux-devtools-extension
+```
 
-
-5. 리덕스에서 비동기 작업을 처리 위해 redux-thunk 설이
-설치
+5. 리덕스에서 비동기 작업을 처리 위해 redux-thunk 설치
+```
 $ yarn add redux-thunk
-
+```
 
 
 

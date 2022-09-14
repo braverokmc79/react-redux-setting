@@ -4,9 +4,7 @@ const initialState = {
     count: 370
 }
 const subscriberReducer = (state = initialState, action) => {
-
     console.log("2. action.type :", action.type);
-
     switch (action.type) {
 
         case ADD_SUBSCRIBER:
