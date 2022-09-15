@@ -16,7 +16,7 @@ function App() {
         <Display />
       </div>
     </Provider>
-  );c:\Users\supercom\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\code\electron-sandbox\workbench\workbench.html
+  )
 }
 
 export default App;
