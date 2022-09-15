@@ -4,6 +4,7 @@ import { legacy_createStore as createStore, applyMiddleware } from 'redux';
 //rootReducer combine 적용
 import rootReducer from './rootReducer';
 import logger from 'redux-logger';
+import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
 //1.기본
@@ -13,9 +14,8 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 //const store = createStore(rootReducer, applyMiddleware(logger));
 
 
-//3.composeWithDevTools 사용시
-const middleware = [logger]
+//3.logger && composeWithDevTools 사용시
+const middleware = [logger, thunk]
 const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(...middleware)));
-
 
 export default store;

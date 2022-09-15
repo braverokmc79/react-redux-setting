@@ -1,7 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux';
-//import { addSubscriber, removeSubscriber } from "../redux";
-import { addSubscriber, removeSubscriber } from "../redux/subscribers/actions";
+//import { addSubscriber, removeSubscriber } from "../redux/subscribers/actions";
+import { addSubscriber, removeSubscriber } from "../redux";
+
 
 
 const Subscribers = ({ count, addSubscriber, removeSubscriber }) => {
@@ -17,6 +18,12 @@ const Subscribers = ({ count, addSubscriber, removeSubscriber }) => {
 
 //공식 문서 : 설정
 //https://react-redux.js.org/api/connect
+
+//rootReducer.js 에 설정한 combine 설정값을 가져온다. 
+// const rootReducer = combineReducers({
+//     subscribers: subscriberReducer,
+//     views: viewReducer
+// });
 const mapStateToProps = ({ subscribers }) => {
     //console.log(state, 'state');
     return {
@@ -40,5 +47,5 @@ const mapDispatchToProps = (dispatch) => {
 // }
 
 
-//Subscribers 컴포넌트에 연결하게전에 mapStateToProps 연결 설정을한다.
+//Subscribers 컴포넌트를 export 하기 전에 mapStateToProps , 와 mapDispatchToProps 연결 설정을한다.
 export default connect(mapStateToProps, mapDispatchToProps)(Subscribers)
